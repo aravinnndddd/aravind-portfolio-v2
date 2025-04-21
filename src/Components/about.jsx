@@ -1,5 +1,5 @@
 import React from "react";
-import Typical from "react-typical";
+import { TypeAnimation } from "react-type-animation";
 import heropic from "../assets/bgImg1.png";
 
 export default function About() {
@@ -16,8 +16,8 @@ export default function About() {
 
         <h3 className="text-slate-400 text-xl mb-4">
           I'm a{" "}
-          <Typical
-            steps={[
+          <TypeAnimation
+            sequence={[
               "Coder", 1500,
               "Web Developer", 1500,
               "UI Designer", 1500,
@@ -26,8 +26,9 @@ export default function About() {
               "Gamer", 1500,
               "Student", 1500
             ]}
-            loop={Infinity}
             wrapper="span"
+            speed={50}
+            repeat={Infinity}
           />
         </h3>
 
