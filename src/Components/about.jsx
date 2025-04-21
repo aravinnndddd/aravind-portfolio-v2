@@ -1,6 +1,6 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import heropic from "../assets/bgImg1.png";
+import heropic from "./assets/bgImg1.png";
 
 export default function About() {
   return (
