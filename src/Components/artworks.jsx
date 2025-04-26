@@ -11,7 +11,7 @@ const artworks = [
   'work10.jpg','work11.jpeg','work13.jpeg','work14.jpeg',
 ];
 
-function Artworks() {
+export default function Artworks() {
   return (
 							<div id="artworks" className="flex h-[80vh] overflow-x-scroll ">
     <div className="flex mt-[10vh] gap-10 px-[45px] ">
@@ -28,4 +28,3 @@ function Artworks() {
   );
 }
 
-export default Artworks;
