@@ -18,9 +18,9 @@ export default function Artworks() {
       {artworks.map((artwork, index) => (
         <img
           key={index}
-          src={require(`./src/assets/${artwork}`)}
+          src={`/assets/${artwork}`}
           alt={`Artwork ${index + 1}`}
-          className="h-[25vh] hover:scale-150 transition-all ease-in duration-500 rounded-[10px]"
+          className="h-[25vh] hover:scale-150 transition-all ease duration-300 rounded-[10px]"
         />
       ))}
     </div>
