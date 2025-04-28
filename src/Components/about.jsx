@@ -2,6 +2,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import heropic from "/assets/bgImg1.png";
 import "../App.css"
+import { Link } from "react-scroll";
 export default function About() {
   return (
     <div id="about" className="h-[100vh] bg-black flex flex-col justify-center md:flex-row w-full md:mt-[10vh] px-[10%]">
@@ -46,18 +47,42 @@ export default function About() {
           </h3>
   
           <p className="leading-7 text-base">
-            I'm a passionate first-year B.Tech student with a love for coding, gaming, and{" "}
-            <a href="#artworks" className="underline font-bold">
-              Drawing
-            </a>
+            I'm a passionate first-year B.Tech student with a love for coding,{" "}
+            <Link to="artworks" smooth={true} duration={500}>
+                        
+                          <a href="#artworks" className="underline font-bold">
+                            Drawing,
+                          </a>
+                      
+                        </Link> {" "} gaming, and learing new {" "}
+            
+            <Link to="skills" smooth={true} duration={500}>
+                        
+                        <a href="#skills" className="underline font-bold">
+                        Skills
+                        </a>
+                    
+                      </Link>
+            
+          
             . I enjoy building{" "}
-            <a href="#projects" className="underline font-bold">
-              Projects
-            </a>
+
+            <Link to="projects" smooth={true} duration={500}>
+                        
+                          <a href="#projects" className="underline font-bold">
+                          Projects
+                          </a>
+                      
+                        </Link>
+
             , and I'm currently diving deep into web development. Let's{" "}
-            <a href="#contact" className="underline font-bold">
-              Connect
-            </a>{" "}
+            <Link to="contact" smooth={true} duration={500}>
+                        
+                          <a href="#contact" className="underline font-bold">
+                          Connect
+                          </a>
+                      
+                        </Link>{" "}
             and create something amazing!
           </p>
         </div>
