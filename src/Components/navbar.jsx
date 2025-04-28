@@ -6,13 +6,13 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="w-full px-4 py-2 bg-white/10 sticky top-0 shadow lg:px-8 lg:py-3 backdrop-blur-lg backdrop-saturate-150 z-[9999]">
-      <div className="container flex flex-wrap items-center justify-between mx-auto text-white">
+    <nav className="w-full px-4 py-2  bg-white/10 sticky top-0 shadow lg:px-8 lg:py-3 backdrop-blur-lg backdrop-saturate-150 z-[9999]">
+      <div className="container flex flex-wrap items-center justify-between font-semibold mx-auto text-purple-400 ">
         {/* Logo */}
         <Link to="aravind" smooth={true} duration={500}>
         <a
           href="#"
-          className="mr-4 block cursor-pointer py-1.5 text-xl text-white font-bold"
+          className="mr-4 block cursor-pointer py-1.5 text-xl text-purple-400  font-bold"
         >
           ARAVIND
         </a>
