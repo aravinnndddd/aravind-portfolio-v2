@@ -5,9 +5,12 @@ import "../App.css"
 import { Link } from "react-scroll";
 export default function About() {
   return (
-    <div id="about" className="h-[100vh] bg-black flex flex-col justify-center md:flex-row w-full md:mt-[10vh] px-[10%]">
+    <div id="about" className="h-[100vh] bg-[url(/assets/space.png)] relative bg-no-repeat bg-cover flex flex-col justify-center md:flex-row w-full md:pt-[10vh] px-[10%]">
+        <div className="absolute inset-0 bg-black/50"></div>
+
+
     {/* Main content */}
-    <div className="md:h-[70vh] h-[60vh] w-10/12  bg-white/10 rounded-[20px] absolute  mx-auto">
+    <div className="h-[70vh]  w-10/12  bg-white/10 backdrop-blur-md rounded-[20px] absolute  mx-auto">
       
       {/* Top-left dots */}
       <div className="relative top-[25px] left-[25px] flex gap-2 w-fit h-[30px]">

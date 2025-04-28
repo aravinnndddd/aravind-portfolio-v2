@@ -8,7 +8,7 @@ function Model() {
 
   useFrame(() => {
     if (modelRef.current) {
-      modelRef.current.rotation.y += 0.003;
+      modelRef.current.rotation.y += 0.010;
     }
   });
 
@@ -19,12 +19,12 @@ const MoonViewer = () => {
   return (
     <div className="h-[30vh] w-full md:h-[50vh] md:w-[50%] flex items-center">
       <Canvas camera={{ position: [0, 0, 5], fov: 65 }}>
-        <ambientLight intensity={0.5} />
+        <ambientLight intensity={0.8} />
         <directionalLight position={[5, 5, 5]} />
         <Suspense fallback={null}>
           <Model />
           <OrbitControls enableZoom={false} />
-          <Environment preset="sunset" />
+          <Environment preset="night" />
         </Suspense>
       </Canvas>
     </div>
