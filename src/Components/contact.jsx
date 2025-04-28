@@ -8,7 +8,7 @@ export const Contact = () => {
     <div id="contact" className='h-[100vh] bg-black flex items-center justify-center'>
    
       <div className='shadow-lg shadow-cyan-500/50 ring-2 ring-purple-500 md:h-[50vh] md:w-[60%] w-[90%]  md:flex  bg-white/10 rounded-3xl text-white '>
-      <h1 className='text-center pt-[2vh] font-bold text-3xl absolute w-[60%] text-white'>Contact Me</h1>
+      <h1 className='text-center mt-[2vh] font-bold text-3xl md:absolute md:w-[60%] text-white'>Contact Me</h1>
         <form action="" className=' flex flex-col gap-4  justify-center mx-10 md:my-[12vh] mt-[20px]'>
           <fieldset><legend>Name:</legend>
           <input type="text" placeholder='Your name' name='name' className='ring-2 ring-blue-500 w-[90%] md:w-[300px] md:h-[5vh] px-2 rounded bg-white/20' /></fieldset>
