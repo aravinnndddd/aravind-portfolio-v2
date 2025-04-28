@@ -12,12 +12,12 @@ function Model() {
     }
   });
 
-  return <primitive ref={modelRef} object={scene} scale={1.5} />;
+  return <primitive ref={modelRef} object={scene} scale={2} />;
 }
 
 const MoonViewer = () => {
   return (
-    <div className="h-[40vh] w-full md:h-[70vh] md:w-[60%] flex items-center justify-center">
+    <div className="h-[30vh] w-full md:h-[50vh] md:w-[50%] flex items-center">
       <Canvas camera={{ position: [0, 0, 5], fov: 65 }}>
         <ambientLight intensity={0.5} />
         <directionalLight position={[5, 5, 5]} />

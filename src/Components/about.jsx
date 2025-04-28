@@ -4,9 +4,9 @@ import heropic from "/assets/bgImg1.png";
 import "../App.css"
 export default function About() {
   return (
-    <div id="about" className="h-[100vh] bg-black flex flex-col justify-center md:flex-row w-full mt-[10vh] px-[10%]">
+    <div id="about" className="h-[100vh] bg-black flex flex-col justify-center md:flex-row w-full md:mt-[10vh] px-[10%]">
     {/* Main content */}
-    <div className="h-[70vh] w-10/12  bg-white/10 rounded-[20px] absolute  mx-auto">
+    <div className="md:h-[70vh] h-[60vh] w-10/12  bg-white/10 rounded-[20px] absolute  mx-auto">
       
       {/* Top-left dots */}
       <div className="relative top-[25px] left-[25px] flex gap-2 w-fit h-[30px]">
@@ -16,11 +16,11 @@ export default function About() {
       </div>
   
       {/* Flex container for Image + Text */}
-      <div className="flex flex-col  md:flex-row w-full h-full">
+      <div className="flex flex-col  md:flex-row w-full px-5 h-full">
         
         {/* Image Section */}
-        <div className="w-5/12 h-[50vh] flex flex-col justify-center items-center">
-          <img id="heropic" className="w-full h-full object-contain" src={heropic} alt="astro" />
+        <div className="md:w-5/12 w-8/12 mx-auto h-[30vh] md:h-[50vh] flex flex-col justify-center items-center">
+          <img id="heropic" className="md:w-full  md:h-full md:object-contain " src={heropic} alt="astro" />
         </div>
   
         {/* Text Section */}
