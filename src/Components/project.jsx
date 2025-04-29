@@ -2,11 +2,11 @@ import React from "react";
 
 export const Project = () => {
   return (
-    <div id="projects" className="flex flex-col h-[100vh] bg-black">
-      <h1 className="text-white text-center font-bold text-4xl pb-[10px]">
+    <div id="projects" className="flex flex-col h-[100vh] bg-black mt-[5vh]">
+      <h1 className="text-white text-center font-bold text-4xl pb-[10px] mt-[10vh]">
         Projects
       </h1>
-     <div className="flex justify-center mt-[5vh]">
+     <div className="flex justify-center ">
      <div className="flex md:flex-col  w-[70%] justify-center absolute h-[40vh] md:h-[55vh] shadow-md ring-2 bg-blue-950 md:translate-y-[15vh] translate-y-[7vh] shadow-purple-500/50 ring-purple-600 rounded-lg">
      <div className="absolute top-[25px] left-[25px] flex gap-2 w-fit h-[30px]">
         <span className="bg-red-500 w-4 h-4 rounded-full block"></span>
