@@ -6,7 +6,7 @@ export const Project = () => {
       <h1 className="text-white text-center font-bold text-4xl pb-[10px]">
         Projects
       </h1>
-     <div className="flex justify-center mt-[20vh]">
+     <div className="flex justify-center mt-[5vh]">
      <div className="flex md:flex-col  w-[70%] justify-center absolute h-[40vh] md:h-[55vh] shadow-md ring-2 bg-blue-950 md:translate-y-[15vh] translate-y-[7vh] shadow-purple-500/50 ring-purple-600 rounded-lg">
      <div className="absolute top-[25px] left-[25px] flex gap-2 w-fit h-[30px]">
         <span className="bg-red-500 w-4 h-4 rounded-full block"></span>
