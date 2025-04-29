@@ -65,7 +65,7 @@ export const Project = () => {
         <span className="bg-yellow-500 w-4 h-4 rounded-full block"></span>
         <span className="bg-green-500 w-4 h-4 rounded-full block"></span>
       </div>
-          <h1 className="text-white text-center text-2xl  md:mt-[20px]">
+          <h1 className="text-white text-center text-2xl  md:mt-[20px] mt-[10vh]">
             Project-1
           </h1>
         </div>
