@@ -5,8 +5,8 @@ import "../App.css"
 import { Link } from "react-scroll";
 export default function About() {
   return (
-    <div id="about" className="h-[100vh] bg-[url(/assets/space.png)] relative bg-no-repeat bg-cover flex flex-col justify-center md:flex-row w-full md:pt-[10vh] px-[10%]">
-        <div className="absolute inset-0 bg-black/50"></div>
+    <div id="about" className="h-[100vh] bg-black flex flex-col justify-center md:flex-row w-full md:pt-[10vh] px-[10%]">
+     
 
 
     {/* Main content */}
