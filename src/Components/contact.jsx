@@ -16,7 +16,7 @@ export const Contact = () => {
       [name]: value
     }));
   };
-
+ 
   const handleSubmit = async (e) => {
     e.preventDefault(); // prevent page reload
 
