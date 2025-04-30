@@ -59,9 +59,9 @@ export const Project = () => {
               <h1 className="text-white md:relative md:top-[25px] absolute text-center text-2xl top-[40px] font-extrabold ">
                 {project.title}
               </h1>
-                <div className="flex md:flex-row flex-col  items-center h-full gap-5 mx-5">
+                <div className="flex md:flex-row flex-col  items-center h-full w-full gap-5 mx-5">
                
-                <img  className="grayscale hover:grayscale-0 hover:scale-105 transition-all ease duration-500 rounded-lg md:w-[40%] flex md:flex-col md:h-[40vh] mt-[10vh] md:mt-[10px]" src={project.img} alt="proj"/>
+                <a className="md:w-[40%]" href={project.link} target="_blank"><img  className="grayscale hover:grayscale-0 hover:scale-105 transition-all ease duration-500 rounded-lg md:w-[100%] flex md:flex-col md:h-[40vh] mt-[10vh] md:mt-[10px]" src={project.img} alt="proj"/></a>
                 <div className="flex flex-col  md:w-[60%] md:text-xl text-[12px] w-[100%] font-semibold text-white">
                   {project.dis}
                
