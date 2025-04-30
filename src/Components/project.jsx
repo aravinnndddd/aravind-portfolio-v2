@@ -11,7 +11,7 @@ export const Project = () => {
     ,
     { id: 1, title: "CineBox",img: "/assets/proj1.png",dis:"CineBox is an app that lets users search for movies or TV series by name. Once you search for a movie or series, the app provides a list of results based on your query. Whether you're looking for a specific title or just browsing, CineBox makes it easy to discover and explore a wide range of movies and shows.",link:"https://movieland-chi-indol.vercel.app/" },
     { id: 3, title: "Tic-Tac-Toe",img: "/assets/proj3.png",dis:"This is a clean, offline two-player Tic Tac Toe game built for pure, old-school fun — no internet, no distractions, just you and your opponent battling it out in a classic game of strategy! The UI is simple yet stylish, making it easy for both players to jump in, mark their moves (X or O), and race to get three in a row — vertically, horizontally, or diagonally.",link:"https://tictactoe-one-flax.vercel.app/"  },
-    { id: 4, title: "Todo App",img: "/assets/proj4.png",dis:"This is a clean and minimalistic To-Do app designed for pure productivity without the clutter.With a simple, intuitive UI, you can easily add, view, and manage your daily tasks — no complicated features, no overwhelming screens. Just the essentials, right where you need them.",link:"hhttps://todo-murex-iota.vercel.app/"  },
+    { id: 4, title: "Todo App",img: "/assets/proj4.png",dis:"This is a clean and minimalistic To-Do app designed for pure productivity without the clutter.With a simple, intuitive UI, you can easily add, view, and manage your daily tasks — no complicated features, no overwhelming screens. Just the essentials, right where you need them.",link:"https://todo-murex-iota.vercel.app/"  },
     { id: 5, title: "Calculator",img: "/assets/proj5.png",dis:"A lightweight calculator offering essential arithmetic operations with clean Light and Dark themes for optimal user comfort.",link:"https://aravinnndddd.github.io/calculator/"  }
     ,
   ];
@@ -61,7 +61,7 @@ export const Project = () => {
               </h1>
                 <div className="flex md:flex-row flex-col  items-center h-full gap-5 mx-5">
                
-                <img  className="rounded-lg md:w-[40%] flex md:flex-col md:h-[40vh] mt-[10vh] md:mt-[10px]" src={project.img} alt="proj"/>
+                <img  className="grayscale hover:grayscale-0 hover:scale-105 transition-all ease duration-500 rounded-lg md:w-[40%] flex md:flex-col md:h-[40vh] mt-[10vh] md:mt-[10px]" src={project.img} alt="proj"/>
                 <div className="flex flex-col  md:w-[60%] md:text-xl text-[12px] w-[100%] font-semibold text-white">
                   {project.dis}
                
