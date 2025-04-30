@@ -65,7 +65,7 @@ export const Project = () => {
                 <div className="flex flex-col  md:w-[60%] md:text-xl text-[12px] w-[100%] font-semibold text-white">
                   {project.dis}
                  <br />
-                 <a className="hover:text-white focus:hover:text-white transition-all ease text-neutral-500 flex underline font-normal text-[13px]" href={project.link}>Click here <LinkIcon width={15}/> </a>
+                 <a className="hover:text-white focus:hover:text-white transition-all ease text-orange-100 flex underline font-semibold md:text-[15px] text-[13px]" href={project.link}>Click here <LinkIcon width={15}/> </a>
                 </div>
                
                 </div>
