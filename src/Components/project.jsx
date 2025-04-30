@@ -1,5 +1,5 @@
 import { img } from "framer-motion/client";
-import { Link2Icon, LinkIcon } from "lucide-react";
+import { Link2Icon, LinkIcon, MoveDown, MoveRight, MoveUp } from "lucide-react";
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 
@@ -64,19 +64,19 @@ export const Project = () => {
                 <img  className="rounded-lg md:w-[40%] flex md:flex-col md:h-[40vh] mt-[10vh] md:mt-[10px]" src={project.img} alt="proj"/>
                 <div className="flex flex-col  md:w-[60%] md:text-xl text-[12px] w-[100%] font-semibold text-white">
                   {project.dis}
-                 <br />
-                 <a className="hover:text-white focus:hover:text-white transition-all ease text-orange-100 flex underline font-semibold md:text-[15px] text-[13px]" href={project.link}>Click here <LinkIcon width={15}/> </a>
+               
+                
                 </div>
                
                 </div>
                {/* Colored Dots */}
-              <div  className="absolute md:top-[25px] md:left-[25px] top-[15px] left-[15px] flex gap-2 w-fit h-[30px]">
+              <div  className="absolute md:top-[25px] md:left-[25px] top-[15px] items-center left-[15px] flex gap-2 w-fit h-[30px]">
                 <div
                   onClick={handleNextProject}
-                  className="bg-red-500 md:w-8 md:h-8 h-6 w-6 rounded-full block cursor-pointer"
-                ></div>
-                <span  className="bg-yellow-500 md:w-8 md:h-8 h-6 w-6 rounded-full block"></span>
-                <div onClick={handleprevProject} className="bg-green-500 md:w-8 md:h-8 h-6 w-6 flex cursor-pointer rounded-full"></div>
+                  className="bg-red-500 md:w-8 md:h-8 h-6 w-6 rounded-full  cursor-pointer items-center flex justify-center"
+                ><MoveUp/></div>
+                <span  className="bg-yellow-500 md:w-8 md:h-8 h-6 w-6 rounded-full flex items-center justify-center"><a href={project.link} target="_blank"><Link2Icon size={15}/></a></span>
+                <div onClick={handleprevProject} className="bg-green-500 md:w-8 md:h-8 h-6 w-6 items-center cursor-pointer justify-center rounded-full flex"><MoveDown/></div>
               </div>
               </div>
              
