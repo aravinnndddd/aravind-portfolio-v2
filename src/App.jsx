@@ -16,7 +16,6 @@ function App() {
     <>
     <Navbar/>
       <Element name="aravind">
-       
           <About/>
       </Element>
    
