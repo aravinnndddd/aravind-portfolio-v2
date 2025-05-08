@@ -93,7 +93,7 @@ export const Contact = () => {
           </div>
         </a>
         <a className={`${style.main}  bg-black ring-1 rounded-2xl flex pl-10 items-center h-[5vh] w-[80%]`}  href="https://www.linkedin.com/in/aravind-p-832849331/" target="_blank" rel="noopener noreferrer">
-        Hire me
+        Connect with me
         <div className={`${style.icon} absolute`}>
           <LinkedinIcon color='white'/>
           </div>

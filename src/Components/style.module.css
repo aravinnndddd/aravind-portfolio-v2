@@ -4,15 +4,15 @@
 
 
 .main:hover .icon {
-  transform: translateX(120px);
+  transform: translateX(130px);
   width: 1%;
 }
 .main:focus .icon {
-  transform: translateX(120px);
+  transform: translateX(130px);
   width: 1%;
 }
 .main:active .icon {
-  transform: translateX(120px);
+  transform: translateX(130px);
   width: 1%;
 }
 .icon{
@@ -21,8 +21,8 @@
   width: 15%;
   
     @media screen and (max-width: 468px) {
-      width: 40%;
-      transform: translateX(0px);
+      width: 1%;
+      transform: translateX(130px);
       
     }
   
