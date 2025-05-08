@@ -26,7 +26,7 @@ export const Project = () => {
     setCurrentIndex((prev) => (prev - 1 + projects.length) % projects.length);
   };
   return (
-    <div id="projects" className="flex flex-col h-[100vh] bg-black mt-[5vh]">
+    <div id="projects" className="flex flex-col h-[100vh]  ">
       <h1 className="text-white text-center font-bold text-4xl pb-[10px] mt-[10vh]">
         Projects
       </h1>

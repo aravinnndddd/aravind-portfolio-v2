@@ -35,7 +35,7 @@ const SkillNode = ({ label, children }) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="ml-4 my-2">
+    <div className="ml-4 my-2  ">
       <div
         onClick={() => setExpanded(!expanded)}
         className="cursor-pointer mb-5 text-lg font-semibold ml-7 text-white hover:text-blue-500 transition"
@@ -85,7 +85,7 @@ const Skills = () => {
   ];
 
   return (
-    <div id="skills" className="bg-black min-h-screen p-8">
+    <div id="skills" className=" min-h-screen p-8">
       <div className="max-w-4xl mx-auto rounded-xl shadow-xl p-6">
         <h2 className="text-3xl font-bold text-white mb-6 text-center">
           Skills

@@ -13,7 +13,7 @@ const artworks = [
 
 export default function Artworks() {
   return (
-							<div id="artworks" className="flex h-[100vh]  items-center overflow-x-scroll ">
+							<div id="artworks" className=" flex h-[100vh]  items-center overflow-x-scroll ">
     <div className="flex gap-10 px-[45px] ">
       {artworks.map((artwork, index) => (
         <img

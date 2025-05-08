@@ -33,15 +33,7 @@ export const Footer = () => {
     <footer className='h-[10vh] bg-black flex flex-col items-center justify-center'>
       <h2 className="text-white font-bold">Developed and Designed by: Aravind</h2>
       <div className="flex gap-4 mt-4">
-        <a href="mailto:aravinnndddd73@gmail.com" target="_blank" rel="noopener noreferrer">
-          <Mail color='white'/>
-        </a>
-        <a href="https://discord.com/users/754961569858846770" target="_blank" rel="noopener noreferrer">
-          <DiscordLogo/>
-        </a>
-        <a href="https://www.linkedin.com/in/aravind-p-832849331/" target="_blank" rel="noopener noreferrer">
-          <LinkedinIcon color='white'/>
-        </a>
+      
       
       </div>
     </footer>
