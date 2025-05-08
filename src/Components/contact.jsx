@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import MoonViewer from './models';
+import { DcStatus } from './dcStatus';
+// import MoonViewer from './models';
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -43,11 +44,16 @@ export const Contact = () => {
   };
 
   return (
-    <div id="contact" className='h-[100vh] bg-black flex items-center justify-center'>
-      <div className='shadow-lg shadow-cyan-500/50 ring-2 ring-purple-500 md:h-[50vh] md:w-[60%] w-[90%] md:flex bg-white/10 rounded-3xl text-white '>
-        <h1 className='text-center mt-[2vh] font-bold text-3xl md:absolute md:w-[60%] text-white'>Contact Me</h1>
+    <div id="contact" className='h-[100vh]  bg-black flex  justify-center '>
+      <h1 className='text-center absolute font-bold text-3xl   text-white'>Contact Me</h1>
+      <div className='shadow-lg p-10 shadow-cyan-500/50 ring-2 ring-purple-500 md:h-[60vh] md:w-[50%] w-[90%] md:flex h-[50vh] rounded-3xl text-white md:justify-center '>
+     
+      
         
-        <form onSubmit={handleSubmit} className='flex flex-col gap-4 justify-center mx-10 md:my-[12vh] mt-[20px]'>
+        <div className=' md:flex md:w-[100%] md:h-[60vh] items-center justify-center md:rounded-3xl md:overflow-hidden w-[100%] h-[50vh]'>
+      <DcStatus/>
+      </div>
+        {/* <form onSubmit={handleSubmit} className='flex flex-col gap-4 justify-center mx-1 md:my-[12vh] mt-[20px]'>
           
           <fieldset><legend>Name:</legend>
           <input type="text" placeholder='Your name' name='name' value={formData.name} onChange={handleChange} className='ring-2 ring-blue-500 w-[90%] md:w-[300px] md:h-[5vh] px-2 rounded bg-white/20' /></fieldset>
@@ -63,10 +69,13 @@ export const Contact = () => {
               Submit
             </button>
           </div>
-        </form>
-
-        <MoonViewer />
+          
+        </form> */}
+     
+{/* 
+        <MoonViewer /> */}
       </div>
+     
     </div>
   );
 };

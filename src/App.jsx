@@ -10,6 +10,7 @@ import Skills from './Components/skills';
 import { Project } from './Components/project';
 import { Contact } from './Components/contact';
 import { Footer } from './Components/footer';
+
 function App() {
 
   return (
@@ -30,10 +31,13 @@ function App() {
       </Element>
       <Element name="contact">
         <Contact />
+        
       </Element>
+      
       <Element name="footer">
         <Footer />
       </Element>
+     
     </>
   )
 }
