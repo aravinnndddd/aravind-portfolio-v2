@@ -61,7 +61,7 @@ export const Project = () => {
               </h1>
                 <div className="flex md:flex-row flex-col  items-center h-full w-full gap-5 mx-5">
                
-                <a className="md:w-[40%]" href={project.link} target="_blank"><img  className="grayscale hover:grayscale-0 hover:scale-105 transition-all ease duration-500 rounded-lg md:w-[100%] flex md:flex-col md:h-[40vh] mt-[10vh] md:mt-[10px]" src={project.img} alt="proj"/></a>
+                <a className="md:w-[40%]" href={project.link} target="_blank"><img  className="md:grayscale md:hover:grayscale-0 md:hover:scale-105 hover:scale-105 transition-all ease duration-500 rounded-lg md:w-[100%] flex md:flex-col md:h-[40vh] mt-[10vh] md:mt-[10px]" src={project.img} alt="proj"/></a>
                 <div className="flex flex-col  md:w-[50%] md:text-xl text-[12px] w-[100%] font-semibold text-white">
                   {project.dis}
                
