@@ -74,12 +74,12 @@ export const Contact = () => {
       <h1 className="text-center absolute font-bold text-3xl mt-3  text-white">
         Contact Me
       </h1>
-      <div className="shadow-lg p-10 shadow-cyan-500/50 ring-2 ring-white md:h-[70vh] md:w-[90%] w-[90%] md:flex h-[80vh] rounded text-white  ">
+      <div className="shadow-lg p-10 shadow-cyan-500/50 ring-2 ring-white md:h-[70vh] md:w-[90%] w-[90%] md:flex h-[90vh] rounded text-white  ">
         <div className="h-[40vh] md:h-[60vh] md:w-[50%] w-[100%] flex flex-col justify-center items-center my-8 md:my-0">
           <DcStatus />
         </div>
        
-    <div className="flex  flex-col md:w-[50%] gap-3  w-[100%] h-[50vh] items-center md:justify-center">
+    <div className="flex  flex-col md:w-[50%] gap-3  w-[100%] h-[60vh] items-center md:justify-center">
     <a className={`${style.main}  bg-black ring-1 rounded-lg flex pl-10 items-center h-[5vh] w-[80%]`}  href="https://discord.com/users/754961569858846770" target="_blank" rel="noopener noreferrer">
     Sent me a Hi
           <div className={`${style.icon} absolute`}>

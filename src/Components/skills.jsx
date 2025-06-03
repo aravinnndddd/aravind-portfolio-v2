@@ -8,25 +8,88 @@ import {
   Atom,
   Globe,
   Pencil,
-
-Brain} from "lucide-react";
+  Brain,
+} from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const skillIcons = [
   { name: "HTML", icon: <FileCode /> },
   { name: "CSS", icon: <Braces /> },
   { name: "JavaScript", icon: <Code /> },
-  { name: "Tailwind", icon: <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="Tailwind" className="w-5 h-5" /> },
+  {
+    name: "Tailwind",
+    icon: (
+      <img
+        src="https://www.svgrepo.com/show/374118/tailwind.svg"
+        alt="Tailwind"
+        className="w-5 h-5"
+      />
+    ),
+  },
   { name: "Git", icon: <GitBranch /> },
   { name: "GitHub", icon: <Github /> },
-  { name: "VS Code", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" className="w-5 h-5" /> },
+  {
+    name: "VS Code",
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+        alt="VS Code"
+        className="w-5 h-5"
+      />
+    ),
+  },
   { name: "Express.js", icon: <span className="text-xs font-mono">Ex</span> },
-  { name: "Node.js", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-5 h-5" /> },
+  {
+    name: "Node.js",
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+        alt="Node.js"
+        className="w-5 h-5"
+      />
+    ),
+  },
   { name: "React", icon: <Atom /> },
-  { name: "Python", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-5 h-5" /> },
-  { name: "C", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" className="w-5 h-5" /> },
-  { name: "Bootstrap", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" className="w-5 h-5" /> },
-  { name: "Postman", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" className="w-5 h-5" /> },
+  {
+    name: "Python",
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+        alt="Python"
+        className="w-5 h-5"
+      />
+    ),
+  },
+  {
+    name: "C",
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+        alt="C"
+        className="w-5 h-5"
+      />
+    ),
+  },
+  {
+    name: "Bootstrap",
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+        alt="Bootstrap"
+        className="w-5 h-5"
+      />
+    ),
+  },
+  {
+    name: "Postman",
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+        alt="Postman"
+        className="w-5 h-5"
+      />
+    ),
+  },
 ];
 
 const getSkillIcon = (name) => {
@@ -79,55 +142,73 @@ const Skills = () => {
     },
     {
       label: "Frameworks",
-      children: ["React", "Tailwind", "CSS", "Bootstrap"/*,"Express.js"*/],
+      children: ["React", "Tailwind", "CSS", "Bootstrap" /*,"Express.js"*/],
     },
     {
       label: "Tools",
-      children: ["Git", "GitHub", "VS Code"/*,"Postman"*/],
+      children: ["Git", "GitHub", "VS Code" /*,"Postman"*/],
     },
   ];
 
   return (
-    <div id="skills" className="flex flex-col h-[210vh] md:h-[120vh] p-8 border-b-2 border-neutral-500">
-      
-       <div className="flex flex-col mb-10">
-         <h2 className="text-3xl font-bold text-white mb-6  p-6">
-             What I Do
-         </h2>
+    <div
+      id="skills"
+      className="flex flex-col h-[250vh] md:h-[120vh] p-8 border-b-2 border-neutral-500"
+    >
+      <div className="flex flex-col mb-10">
+        <h2 className="text-3xl font-bold text-white mb-6  p-6">What I Do</h2>
         <div className="flex md:flex-row flex-col  w-full md:h-[35vh] gap-3">
-          <div className="flex flex-col items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded md:w-[33%] h-[35vh]">
-
-
-
-
-          <Globe color="purple" size={30}/>
-<h1 className="text-2xl text-white font-extrabold">Web Development</h1> <br />
-
-<p className="text-md text-white font-semibold">I build modern, responsive websites that turn your ideas into reality. From intuitive user interfaces to seamless user experiences, I craft web solutions that are as beautiful as they are functional.</p>
-
+          <div className="flex flex-col items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded md:w-[33%] h-[45vh]">
+            <Globe color="purple" size={30} />
+            <h1 className="text-2xl text-white font-extrabold">
+              Web Development
+            </h1>{" "}
+            <br />
+            <p className="text-md text-white font-semibold">
+              I build modern, responsive websites that turn your ideas into
+              reality. From intuitive user interfaces to seamless user
+              experiences, I craft web solutions that are as beautiful as they
+              are functional.
+            </p>
           </div>
-          <div className="flex flex-col  items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded md:w-[33%] h-[35vh]">
-          <Pencil color="purple" size={30}/>
-<h1 className="text-2xl text-white font-extrabold">Commissioned Art</h1> <br />
-
-<p className="text-md text-white font-semibold">Outside of code, I create hand-drawn pencil sketches on commission. From realistic portraits to imaginative concepts, I bring depth and emotion to every piece — no filters, no digital shortcuts, just pencil and pure focus</p>
-</div>
-          <div className="flex flex-col  items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded md:w-[33%] h-[35vh]">
-          <Brain color="purple" size={30}/>
-<h1 className="text-2xl text-white font-extrabold"> Always Learning</h1> <br />
-
-<p className="text-md text-white font-semibold">Tech never stands still, and neither do I. I’m constantly learning new tools, frameworks, design trends, and creative techniques. Whether it’s leveling up my frontend game or exploring new artistic styles, I believe growth is a never-ending journey — and I love every second of it.</p>
-</div>
+          <div className="flex flex-col  items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded md:w-[33%] h-[45vh]">
+            <Pencil color="purple" size={30} />
+            <h1 className="text-2xl text-white font-extrabold">
+              Commissioned Art
+            </h1>{" "}
+            <br />
+            <p className="text-md text-white font-semibold">
+              Outside of code, I create hand-drawn pencil sketches on
+              commission. From realistic portraits to imaginative concepts
+            </p>
+          </div>
+          <div className="flex flex-col  items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded md:w-[33%] h-[45vh]">
+            <Brain color="purple" size={30} />
+            <h1 className="text-2xl text-white font-extrabold">
+              {" "}
+              Always Learning
+            </h1>{" "}
+            <br />
+            <p className="text-md text-white font-semibold">
+              Tech never stands still, and neither do I. I’m constantly learning
+              new tools, frameworks, design trends, and creative techniques.
+              Whether it’s leveling up my frontend game or exploring new
+              artistic styles.
+            </p>
+          </div>
         </div>
       </div>
       <div className="flex flex-col rounded-xl shadow-xl p-6">
         <h2 className="text-3xl font-bold text-white mb-6 ">
-           Technologies I Use
+          Technologies I Use
         </h2>
         {skillsData.map((group, index) => (
-          <SkillNode key={index} label={group.label} children={group.children} />
+          <SkillNode
+            key={index}
+            label={group.label}
+            children={group.children}
+          />
         ))}
-       
       </div>
     </div>
   );
