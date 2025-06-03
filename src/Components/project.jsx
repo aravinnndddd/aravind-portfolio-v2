@@ -6,8 +6,8 @@ import { Link } from "react-scroll";
 export const Project = () => {
   const projects = [
     { id: 6, title: "Advyka'25",img: "/assets/proj6.png",dis:"I contributed to the frontend development of the Advyka 2025 techfest website, focusing on creating a user-friendly, responsive interface. The site provided event details, schedules, and speaker info, enhancing the overall attendee experience. This project strengthened my skills in web development and UX/UI design.",link:"https://advyka.in/"  }
-   ,
-    { id: 2, title: "Popzzmedia",img: "/assets/proj2.png",dis:"PopzzMedia is a premium landing page for an online course, crafted to drive engagement and conversions. With a bold design, a persuasive headline, a demo video, and a countdown timer, it delivers a high-energy user experience optimized for action.",link:"https://popzzmedia.com/"  }
+  //  ,
+  //   { id: 2, title: "Popzzmedia",img: "/assets/proj2.png",dis:"PopzzMedia is a premium landing page for an online course, crafted to drive engagement and conversions. With a bold design, a persuasive headline, a demo video, and a countdown timer, it delivers a high-energy user experience optimized for action.",link:"https://popzzmedia.com/"  }
     ,
     { id: 1, title: "CineBox",img: "/assets/proj1.png",dis:"CineBox is an app that lets users search for movies or TV series by name. Once you search for a movie or series, the app provides a list of results based on your query. Whether you're looking for a specific title or just browsing, CineBox makes it easy to discover and explore a wide range of movies and shows.",link:"https://movieland-chi-indol.vercel.app/" },
     { id: 3, title: "Tic-Tac-Toe",img: "/assets/proj3.png",dis:"This is a clean, offline two-player Tic Tac Toe game built for pure, old-school fun — no internet, no distractions, just you and your opponent battling it out in a classic game of strategy! The UI is simple yet stylish, making it easy for both players to jump in, mark their moves (X or O), and race to get three in a row — vertically, horizontally, or diagonally.",link:"https://tictactoe-one-flax.vercel.app/"  },
@@ -43,7 +43,7 @@ export const Project = () => {
              
               key={project.id}
               className={`flex md:flex-col w-[95%]  justify-center absolute h-[60vh] md:h-[55vh] md:w-[70%]
-                shadow-md ring-2 bg-blue-950 shadow-purple-500/50 ring-purple-600 rounded-lg
+                shadow-md  bg-gray-950 shadow-purple-500/50  rounded-lg
                 transition-all duration-500 ease-in-out`}
               style={{
                 transform: `translateY(${translateYValues[index] || "0vh"}) ${
@@ -56,12 +56,12 @@ export const Project = () => {
               
 
               {/* Project Title */}
-              <h1 className="text-white md:relative md:top-[25px] absolute text-center text-2xl top-[40px] font-extrabold ">
+              <h1 className="text-white md:relative md:top-[25px] absolute text-center text-2xl top-[30px] font-extrabold ">
                 {project.title}
               </h1>
                 <div className="flex md:flex-row flex-col  items-center h-full w-full gap-5 mx-5">
                
-                <a className="md:w-[40%]" href={project.link} target="_blank"><img  className="grayscale hover:grayscale-0 hover:scale-105 transition-all ease duration-500 rounded-lg md:w-[100%] flex md:flex-col md:h-[40vh] mt-[10vh] md:mt-[10px]" src={project.img} alt="proj"/></a>
+                <a className="md:w-[40%]" href={project.link} target="_blank"><img  className="md:grayscale md:hover:grayscale-0 hover:scale-105 transition-all ease duration-500 rounded-lg md:w-[100%] flex md:flex-col md:h-[40vh] h-[30vh]  mt-[10vh] md:mt-[10px]" src={project.img} alt="proj"/></a>
                 <div className="flex flex-col  md:w-[50%] md:text-xl text-[12px] w-[100%] font-semibold text-white">
                   {project.dis}
                
@@ -74,9 +74,9 @@ export const Project = () => {
                 <div
                   onClick={handleNextProject}
                   className="bg-red-500 md:w-8 md:h-8 h-6 w-6 rounded-full  cursor-pointer items-center flex justify-center"
-                ><MoveUp/></div>
+                ><MoveUp size={15}/></div>
                 <span  className="bg-yellow-500 md:w-8 md:h-8 h-6 w-6 rounded-full flex items-center justify-center"><a href={project.link} target="_blank"><Link2Icon size={15}/></a></span>
-                <div onClick={handleprevProject} className="bg-green-500 md:w-8 md:h-8 h-6 w-6 items-center cursor-pointer justify-center rounded-full flex"><MoveDown/></div>
+                <div onClick={handleprevProject} className="bg-green-500 md:w-8 md:h-8 h-6 w-6 items-center cursor-pointer justify-center rounded-full flex"><MoveDown size={15}/></div>
               </div>
               </div>
              

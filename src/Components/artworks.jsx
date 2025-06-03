@@ -1,5 +1,5 @@
 
-const artworks = [
+const artworks= [
   'work2.png',
   'work3.png',
   'work4.png',

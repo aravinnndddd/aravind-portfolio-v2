@@ -24,7 +24,7 @@ export default function Navbar() {
           className="relative ml-auto h-10 w-10 rounded-lg text-white lg:hidden focus:outline-none"
           type="button"
         >
-          <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <span className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-6 h-6"
@@ -56,35 +56,36 @@ export default function Navbar() {
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } w-full lg:flex lg:w-auto`}
+          } w-full lg:flex lg:w-auto transition-all`}
         >
-          <ul className="flex flex-col gap-4 mt-4 lg:mt-0 lg:flex-row lg:items-center lg:gap-8">
+          <ul className="bg-white/10 p-2 rounded-lg md:bg-inherit md:flex md:flex-col md:gap-4 md:mt-4 lg:mt-0 lg:flex-row lg:items-center lg:gap-8">
             <Link to="artworks" smooth={true} duration={500}>
-            <li>
-              <a href="#artworks" className="text-sm hover:text-blue-400">
+            <li className="border-b-2 md:border-transparent">
+              <a href="#artworks" className="md:text-sm text-lg hover:text-blue-400 ">
                 Artworks
               </a>
             </li>
             </Link>
             <Link to="skills" smooth={true} duration={500}>
-            <li>
-              <a href="#skills" className="text-sm hover:text-blue-400">
+            <li className="border-b-2 md:border-transparent">
+              <a href="#skills" className="md:text-sm text-lg hover:text-blue-400">
                 Skills
               </a>
             </li>
             </Link>
             <Link to="projects" smooth={true} duration={500}>
-            <li>
-              <a href="#projects" className="text-sm hover:text-blue-400">
+            <li className="border-b-2 md:border-transparent">
+              <a href="#projects" className="md:text-sm text-lg hover:text-blue-400">
                 Projects
               </a>
             </li>
             </Link>
             <Link to="contact" smooth={true} duration={500}>
-            <li>
-              <a href="#contact" className="text-sm hover:text-blue-400">
+            <li className="border-b-2 md:border-transparent">
+              <a href="#contact" className="md:text-sm text-lg hover:text-blue-400">
                 Contact
               </a>
+              
             </li>
             </Link>
           </ul>

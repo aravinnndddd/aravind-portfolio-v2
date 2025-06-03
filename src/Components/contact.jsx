@@ -71,28 +71,28 @@ export const Contact = () => {
 
   return (
     <div id="contact" className="h-[100vh]  mt-[10vh] flex  justify-center ">
-      <h1 className="text-center absolute font-bold text-3xl   text-white">
+      <h1 className="text-center absolute font-bold text-3xl mt-3  text-white">
         Contact Me
       </h1>
-      <div className="shadow-lg p-10 shadow-cyan-500/50 ring-2 ring-purple-500 md:h-[60vh] md:w-[60%] w-[90%] md:flex h-[90vh] rounded-3xl text-white  ">
-        <div className="ml-5 md:flex md:w-[50%] md:h-[60vh]  md:rounded-3xl md:overflow-hidden w-[100%] h-[60vh]">
+      <div className="shadow-lg p-10 shadow-cyan-500/50 ring-2 ring-white md:h-[70vh] md:w-[90%] w-[90%] md:flex h-[80vh] rounded text-white  ">
+        <div className="h-[40vh] md:h-[60vh] md:w-[50%] w-[100%] flex flex-col justify-center items-center my-8 md:my-0">
           <DcStatus />
         </div>
        
     <div className="flex  flex-col md:w-[50%] gap-3  w-[100%] h-[30vh] items-center md:justify-center">
-    <a className={`${style.main}  bg-black ring-1 rounded-2xl flex pl-10 items-center h-[5vh] w-[80%]`}  href="https://discord.com/users/754961569858846770" target="_blank" rel="noopener noreferrer">
+    <a className={`${style.main}  bg-black ring-1 rounded-lg flex pl-10 items-center h-[5vh] w-[80%]`}  href="https://discord.com/users/754961569858846770" target="_blank" rel="noopener noreferrer">
     Sent me a Hi
           <div className={`${style.icon} absolute`}>
           <DiscordLogo/>
           </div>
         </a>
-        <a className={`${style.main}  bg-black ring-1 rounded-2xl flex pl-10 items-center h-[5vh] w-[80%]`}  href="mailto:aravinnndddd73@gmail.com" target="_blank" rel="noopener noreferrer">
+        <a className={`${style.main}  bg-black ring-1 rounded-lg flex pl-10 items-center h-[5vh] w-[80%]`}  href="mailto:aravinnndddd73@gmail.com" target="_blank" rel="noopener noreferrer">
         Sent me a Mail
         <div className={`${style.icon} absolute`}>
           <Mail color='white'/>
           </div>
         </a>
-        <a className={`${style.main}  bg-black ring-1 rounded-2xl flex pl-10 items-center h-[5vh] w-[80%]`}  href="https://www.linkedin.com/in/aravind-p-832849331/" target="_blank" rel="noopener noreferrer">
+        <a className={`${style.main}  bg-black ring-1 rounded-lg flex pl-10 items-center h-[5vh] w-[80%]`}  href="https://www.linkedin.com/in/aravind-p-832849331/" target="_blank" rel="noopener noreferrer">
         Connect with me
         <div className={`${style.icon} absolute`}>
           <LinkedinIcon color='white'/>

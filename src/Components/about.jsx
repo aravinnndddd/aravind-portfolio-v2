@@ -9,12 +9,12 @@ export default function About() {
       id="about"
       className="h-[100vh]  flex flex-col justify-center md:flex-row w-full md:pt-[10vh] px-[10%]"
     >
-      <div className="h-[70vh]  w-10/12  bg-white/10 backdrop-blur-md rounded-[20px] absolute  mx-auto">
-        <div className="relative top-[25px] left-[25px] flex gap-2 w-fit h-[30px]">
+      <div className="h-[70vh] pt-10  w-10/12  bg-white/10 backdrop-blur-md rounded-[20px] absolute  mx-auto">
+        {/* <div className="relative top-[25px] left-[25px] flex gap-2 w-fit h-[30px]">
           <span className="bg-red-500 w-4 h-4 rounded-full block"></span>
           <span className="bg-yellow-500 w-4 h-4 rounded-full block"></span>
           <span className="bg-green-500 w-4 h-4 rounded-full block"></span>
-        </div>
+        </div> */}
 
         <div className="flex flex-col  md:flex-row w-full px-5 h-full">
           <div className="md:w-5/12 w-8/12 mx-auto h-[30vh] md:h-[50vh] flex flex-col justify-center items-center">
