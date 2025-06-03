@@ -20,11 +20,12 @@ function App() {
           <About/>
       </Element>
    
-      <Element name="artworks">
-        <Artworks />
-      </Element>
+      
       <Element name="skills">
         <Skills />
+      </Element>
+      <Element name="artworks">
+        <Artworks/>
       </Element>
       <Element name="projects">
         <Project />

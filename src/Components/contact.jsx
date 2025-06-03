@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { DcStatus } from "./dcStatus";
-import { LinkedinIcon, Mail } from "lucide-react";
+import { Instagram, LinkedinIcon, Mail } from "lucide-react";
 // import MoonViewer from './models';
 import style from './style.module.css'
 const DiscordLogo = ({ color = "#ffffff", size = 24 }) => {
@@ -70,7 +70,7 @@ export const Contact = () => {
   };
 
   return (
-    <div id="contact" className="h-[100vh]  mt-[10vh] flex  justify-center ">
+    <div id="contact" className="h-[100vh] border-b-2 border-neutral-500 mt-[10vh] flex  justify-center ">
       <h1 className="text-center absolute font-bold text-3xl mt-3  text-white">
         Contact Me
       </h1>
@@ -79,7 +79,7 @@ export const Contact = () => {
           <DcStatus />
         </div>
        
-    <div className="flex  flex-col md:w-[50%] gap-3  w-[100%] h-[30vh] items-center md:justify-center">
+    <div className="flex  flex-col md:w-[50%] gap-3  w-[100%] h-[50vh] items-center md:justify-center">
     <a className={`${style.main}  bg-black ring-1 rounded-lg flex pl-10 items-center h-[5vh] w-[80%]`}  href="https://discord.com/users/754961569858846770" target="_blank" rel="noopener noreferrer">
     Sent me a Hi
           <div className={`${style.icon} absolute`}>
@@ -96,6 +96,12 @@ export const Contact = () => {
         Connect with me
         <div className={`${style.icon} absolute`}>
           <LinkedinIcon color='white'/>
+          </div>
+        </a>
+         <a className={`${style.main}  bg-black ring-1 rounded-lg flex pl-10 items-center h-[5vh] w-[80%]`}  href="https://www.instagram.com/aravinnndddd/" target="_blank" rel="noopener noreferrer">
+        Sent me a Hi
+        <div className={`${style.icon} absolute`}>
+          <Instagram color='white'/>
           </div>
         </a>
     </div>

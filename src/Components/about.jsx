@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="h-[100vh]  flex flex-col justify-center md:flex-row w-full md:pt-[10vh] px-[10%]"
+      className="h-[100vh] border-b-2 border-neutral-500 flex flex-col justify-center md:flex-row w-full md:pt-[10vh] px-[10%]"
     >
       <div className="h-[70vh] pt-10  w-10/12  bg-white/10 backdrop-blur-md rounded-[20px] absolute  mx-auto">
         {/* <div className="relative top-[25px] left-[25px] flex gap-2 w-fit h-[30px]">

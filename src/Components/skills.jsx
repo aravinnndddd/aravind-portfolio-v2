@@ -6,7 +6,10 @@ import {
   GitBranch,
   Github,
   Atom,
-} from "lucide-react";
+  Globe,
+  Pencil,
+
+Brain} from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const skillIcons = [
@@ -32,7 +35,7 @@ const getSkillIcon = (name) => {
 };
 
 const SkillNode = ({ label, children }) => {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(true);
 
   return (
     <div className="ml-4 my-2  ">
@@ -50,7 +53,7 @@ const SkillNode = ({ label, children }) => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="ml-12 text-slate-300 md:list-none md:flex md:flex-wrap md:gap-7"
+            className="ml-8 md:ml-12 text-slate-300 md:list-none md:flex md:flex-wrap md:gap-7"
           >
             {children.map((item, idx) => (
               <li
@@ -76,23 +79,55 @@ const Skills = () => {
     },
     {
       label: "Frameworks",
-      children: ["React", "Tailwind", "Express.js", "CSS", "Bootstrap"],
+      children: ["React", "Tailwind", "CSS", "Bootstrap"/*,"Express.js"*/],
     },
     {
       label: "Tools",
-      children: ["Git", "GitHub", "VS Code", "Postman"],
+      children: ["Git", "GitHub", "VS Code"/*,"Postman"*/],
     },
   ];
 
   return (
-    <div id="skills" className=" min-h-screen p-8">
-      <div className="max-w-4xl mx-auto rounded-xl shadow-xl p-6">
-        <h2 className="text-3xl font-bold text-white mb-6 text-center">
-          Skills
+    <div id="skills" className="flex flex-col h-[210vh] md:h-[120vh] p-8 border-b-2 border-neutral-500">
+      
+       <div className="flex flex-col mb-10">
+         <h2 className="text-3xl font-bold text-white mb-6  p-6">
+             What I Do
+         </h2>
+        <div className="flex md:flex-row flex-col  w-full md:h-[35vh] gap-3">
+          <div className="flex flex-col items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded md:w-[33%] h-[35vh]">
+
+
+
+
+          <Globe color="purple" size={30}/>
+<h1 className="text-2xl text-white font-extrabold">Web Development</h1> <br />
+
+<p className="text-md text-white font-semibold">I build modern, responsive websites that turn your ideas into reality. From intuitive user interfaces to seamless user experiences, I craft web solutions that are as beautiful as they are functional.</p>
+
+          </div>
+          <div className="flex flex-col  items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded md:w-[33%] h-[35vh]">
+          <Pencil color="purple" size={30}/>
+<h1 className="text-2xl text-white font-extrabold">Commissioned Art</h1> <br />
+
+<p className="text-md text-white font-semibold">Outside of code, I create hand-drawn pencil sketches on commission. From realistic portraits to imaginative concepts, I bring depth and emotion to every piece — no filters, no digital shortcuts, just pencil and pure focus</p>
+</div>
+          <div className="flex flex-col  items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded md:w-[33%] h-[35vh]">
+          <Brain color="purple" size={30}/>
+<h1 className="text-2xl text-white font-extrabold"> Always Learning</h1> <br />
+
+<p className="text-md text-white font-semibold">Tech never stands still, and neither do I. I’m constantly learning new tools, frameworks, design trends, and creative techniques. Whether it’s leveling up my frontend game or exploring new artistic styles, I believe growth is a never-ending journey — and I love every second of it.</p>
+</div>
+        </div>
+      </div>
+      <div className="flex flex-col rounded-xl shadow-xl p-6">
+        <h2 className="text-3xl font-bold text-white mb-6 ">
+           Technologies I Use
         </h2>
         {skillsData.map((group, index) => (
           <SkillNode key={index} label={group.label} children={group.children} />
         ))}
+       
       </div>
     </div>
   );

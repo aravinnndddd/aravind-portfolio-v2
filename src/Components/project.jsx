@@ -26,12 +26,12 @@ export const Project = () => {
     setCurrentIndex((prev) => (prev - 1 + projects.length) % projects.length);
   };
   return (
-    <div id="projects" className="flex flex-col h-[100vh]  ">
+    <div id="projects" className="flex flex-col  h-[100vh]  border-b-2 border-neutral-500">
       <h1 className="text-white text-center font-bold text-4xl pb-[10px] mt-[10vh]">
         Projects
       </h1>
 
-      <div className="flex justify-center ">
+      <div className="flex  justify-center ">
         {projects.map((project, index) => {
           // Calculate stacking order
           const zIndex = projects.length - index;
@@ -43,7 +43,7 @@ export const Project = () => {
              
               key={project.id}
               className={`flex md:flex-col w-[95%]  justify-center absolute h-[60vh] md:h-[55vh] md:w-[70%]
-                shadow-md  bg-gray-950 shadow-purple-500/50  rounded-lg
+                shadow-md  bg-black shadow-black/100  rounded-lg
                 transition-all duration-500 ease-in-out`}
               style={{
                 transform: `translateY(${translateYValues[index] || "0vh"}) ${
@@ -82,8 +82,20 @@ export const Project = () => {
              
             
           );
+          
         })}
+  
       </div>
+      <div className="relative flex top-[75vh] justify-center md:justify-normal md:flex md:top-[20vh] md:left-10">
+         <div  className="md:flex-col flex gap-2  w-fit ">
+                <div
+                  className="bg-red-500 md:w-8 md:h-8 h-6 w-6 rounded-full  cursor-pointer items-center flex justify-center"
+                ><MoveUp size={15}/> </div><p className="text-red-500">Next</p>
+                <span  className="bg-yellow-500 md:w-8 md:h-8 h-6 w-6 rounded-full flex items-center justify-center"><Link2Icon size={15}/></span><p className="text-yellow-500">Link</p>
+                <div  className="bg-green-500 md:w-8 md:h-8 h-6 w-6 items-center cursor-pointer justify-center rounded-full flex"><MoveDown size={15}/></div><p className="text-green-500">Back</p>
+              </div>
+      </div>
+           
     </div>
   );
 };
