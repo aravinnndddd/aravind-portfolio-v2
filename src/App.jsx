@@ -23,10 +23,11 @@ function App() {
       
       <Element name="skills">
         <Skills />
+         <Artworks/>
       </Element>
-      <Element name="artworks">
-        <Artworks/>
-      </Element>
+      {/* <Element name="artworks">
+       
+      </Element> */}
       <Element name="projects">
         <Project />
       </Element>

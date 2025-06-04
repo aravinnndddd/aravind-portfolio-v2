@@ -13,7 +13,7 @@ const artworks= [
 
 export default function Artworks() {
   return (
-							<div id="artworks" className="border-b-2 border-neutral-500 flex h-[100vh]  m-5 items-center overflow-x-scroll ">
+							<div id="artworks" className="border-b-2 border-t-2  border-neutral-500 flex h-[55vh]  m-5 items-center overflow-x-scroll ">
     <div className="flex gap-10 px-[45px] ">
       {artworks.map((artwork, index) => (
         <img

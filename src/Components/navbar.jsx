@@ -59,13 +59,13 @@ export default function Navbar() {
           } w-full lg:flex lg:w-auto transition-all`}
         >
           <ul className="bg-white/10 p-2 rounded-lg md:bg-inherit md:flex md:flex-col md:gap-4 md:mt-4 lg:mt-0 lg:flex-row lg:items-center lg:gap-8">
-            <Link to="artworks" smooth={true} duration={500}>
+            {/* <Link to="artworks" smooth={true} duration={500}>
             <li className="border-b-2 md:border-transparent">
               <a href="#artworks" className="md:text-sm text-lg hover:text-blue-400 ">
                 Artworks
               </a>
             </li>
-            </Link>
+            </Link> */}
             <Link to="skills" smooth={true} duration={500}>
             <li className="border-b-2 md:border-transparent">
               <a href="#skills" className="md:text-sm text-lg hover:text-blue-400">
