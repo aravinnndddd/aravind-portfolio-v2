@@ -153,7 +153,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="flex flex-col h-[180vh] md:h-[120vh]  m-5 border-b-2 border-neutral-500"
+      className="flex flex-col h-[180vh] md:h-[120vh]  m-5 "
     >
       <div className="flex flex-col mb-10">
         <h2 className="text-3xl font-bold text-white  p-6">What I Do</h2>
