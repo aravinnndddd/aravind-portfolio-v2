@@ -18,7 +18,7 @@
 .icon{
   background: #000000;
   transition: transform 0.5s ease-in-out;
-  width: 15%;
+  width: 18%;
   
     @media screen and (max-width: 468px) {
       width: 1%;

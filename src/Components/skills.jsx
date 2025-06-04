@@ -153,12 +153,12 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="flex flex-col h-[250vh] md:h-[120vh] p-8 border-b-2 border-neutral-500"
+      className="flex flex-col h-[180vh] md:h-[120vh]  m-5 border-b-2 border-neutral-500"
     >
       <div className="flex flex-col mb-10">
-        <h2 className="text-3xl font-bold text-white mb-6  p-6">What I Do</h2>
-        <div className="flex md:flex-row flex-col  w-full md:h-[35vh] gap-3">
-          <div className="flex flex-col items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded md:w-[33%] h-[45vh]">
+        <h2 className="text-3xl font-bold text-white  p-6">What I Do</h2>
+        <div className="flex md:flex-row flex-col mb-2  w-full md:h-[35vh] gap-3">
+          <div className="flex flex-col items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded md:w-[33%] ">
             <Globe color="purple" size={30} />
             <h1 className="text-2xl text-white font-extrabold">
               Web Development
@@ -171,7 +171,7 @@ const Skills = () => {
               are functional.
             </p>
           </div>
-          <div className="flex flex-col  items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded md:w-[33%] h-[45vh]">
+          <div className="flex flex-col  items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded md:w-[33%] ">
             <Pencil color="purple" size={30} />
             <h1 className="text-2xl text-white font-extrabold">
               Commissioned Art
@@ -182,7 +182,7 @@ const Skills = () => {
               commission. From realistic portraits to imaginative concepts
             </p>
           </div>
-          <div className="flex flex-col  items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded md:w-[33%] h-[45vh]">
+          <div className="flex flex-col  items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded md:w-[33%] ">
             <Brain color="purple" size={30} />
             <h1 className="text-2xl text-white font-extrabold">
               {" "}
@@ -199,7 +199,7 @@ const Skills = () => {
         </div>
       </div>
       <div className="flex flex-col rounded-xl shadow-xl p-6">
-        <h2 className="text-3xl font-bold text-white mb-6 ">
+        <h2 className="text-2xl font-bold text-white border-b-2 w-[220px] border-neutral-500 ">
           Technologies I Use
         </h2>
         {skillsData.map((group, index) => (
