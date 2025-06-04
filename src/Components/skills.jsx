@@ -10,7 +10,7 @@ import {
   Pencil,
   Brain,
 } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+
 
 const skillIcons = [
   { name: "HTML", icon: <FileCode /> },
@@ -98,38 +98,34 @@ const getSkillIcon = (name) => {
 };
 
 const SkillNode = ({ label, children }) => {
-  const [expanded, setExpanded] = useState(true);
+
 
   return (
-    <div className="ml-4 my-2  ">
-      <div
-        onClick={() => setExpanded(!expanded)}
-        className="cursor-pointer mb-5 text-lg font-semibold ml-7 text-white hover:text-blue-500 transition"
+    <div className="ml-4 my-2 bg-slate-500/10 rounded-lg shadow-md p-4">
+      <h1
+    
+        className="cursor-pointer flex  mb-5 justify-center text-lg font-semibold ml-7 text-white hover:text-blue-500 transition"
       >
-        {expanded ? "📂" : "📁"} {label}
-      </div>
+      {label}
+      </h1>
 
-      <AnimatePresence>
-        {expanded && (
-          <motion.ul
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
-            className="ml-8 md:ml-12 text-slate-300 md:list-none md:flex md:flex-wrap md:gap-7"
+         
+          <div
+            
+            className="ml-8 md:ml-12 justify-center  text-slate-300 md:list-none md:flex md:flex-wrap md:gap-7"
           >
             {children.map((item, idx) => (
               <li
                 key={idx}
-                className="flex items-center gap-2 hover:text-blue-300 cursor-pointer md:hover:bg-white/10 md:bg-black/20 shadow-sm shadow-gray-400 rounded md:transition px-4 py-2 w-[160px] my-[10px] md:my-[2px]"
+                className="flex items-center gap-2 p-2 hover:text-blue-300 cursor-pointer md:hover:bg-white/10 md:bg-black/20 mt-2 rounded "
               >
                 {getSkillIcon(item)}
                 {item}
               </li>
             ))}
-          </motion.ul>
-        )}
-      </AnimatePresence>
+          </div>
+        
+      
     </div>
   );
 };
@@ -153,7 +149,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="flex flex-col h-[280vh] md:h-[120vh]  m-5 "
+      className="flex flex-col md:h-[120vh]  m-5 "
     >
       <div className="flex flex-col ">
         <h2 className="text-3xl font-bold text-white  p-6">What I Do</h2>
