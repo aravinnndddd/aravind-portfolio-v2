@@ -74,7 +74,7 @@ export const Contact = () => {
       <h1 className="text-center absolute font-bold text-3xl mt-3  text-white">
         Contact Me
       </h1>
-      <div className="shadow-lg p-10 shadow-cyan-500/50 ring-2 ring-white md:h-[70vh] md:w-[90%] w-[90%] md:flex h-[90vh] rounded text-white  ">
+      <div className="shadow-lg p-10 shadow-cyan-500/45 ring-2 ring-white md:h-[70vh] md:w-[90%] w-[90%] md:flex h-[90vh] rounded text-white  ">
         <div className="h-[40vh] md:h-[60vh] md:w-[50%] w-[100%] flex flex-col justify-center items-center my-8 md:my-0">
           <DcStatus />
         </div>
