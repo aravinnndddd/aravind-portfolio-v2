@@ -9,14 +9,14 @@ export default function About() {
       id="about"
       className="h-[100vh] border-b-2 border-neutral-500 flex flex-col justify-center md:flex-row m-5 md:pt-[10vh] "
     >
-      <div className="h-[70vh] pt-10 w-[90%] bg-white/10 backdrop-blur-md rounded-[20px] absolute  mx-auto">
+      <div className="h-[70vh] border-l-2 border-l-blue-700 pt-10 w-[90%] bg-white/10 backdrop-blur-md rounded-[20px] absolute  mx-auto">
         {/* <div className="relative top-[25px] left-[25px] flex gap-2 w-fit h-[30px]">
           <span className="bg-red-500 w-4 h-4 rounded-full block"></span>
           <span className="bg-yellow-500 w-4 h-4 rounded-full block"></span>
           <span className="bg-green-500 w-4 h-4 rounded-full block"></span>
         </div> */}
 
-        <div className="flex flex-col  md:flex-row w-full px-5 h-full">
+        <div className="  flex flex-col  md:flex-row w-full px-5 h-full">
           <div className="md:w-5/12 w-8/12 mx-auto h-[30vh] md:h-[50vh] flex flex-col justify-center items-center">
             <img
               id="heropic"
@@ -26,10 +26,10 @@ export default function About() {
             />
           </div>
 
-          <div className="text-purple-400 md:w-6/12 h-[50vh] flex flex-col md:justify-center leading-7 ">
-            <h2 className="font-bold md:text-3xl mb-2">Hi, I'm Aravind</h2>
+          <div className="text-purple-400 md:w-10/12 h-[50vh] flex flex-col md:justify-center leading-7 ">
+            <h2 className="font-bold md:text-3xl text-2xl text-center mb-2">Hi, I'm Aravind</h2>
 
-            <h3 className="text-indigo-400 md:text-xl mb-4">
+            <code className="text-indigo-400 md:text-xl text-center mb-4">
               I'm {" "}
               <TypeAnimation
                 sequence={[
@@ -52,9 +52,9 @@ export default function About() {
                 speed={50}
                 repeat={Infinity}
               />
-            </h3>
+            </code>
 
-            <p className="leading-7 text-base">
+            <code className="leading-7 text-base">
               I'm a passionate first-year B.Tech student with a love for coding,{" "}
               <Link to="artworks" smooth={true} duration={500}>
                 <a href="#artworks" className="underline font-bold">
@@ -80,7 +80,7 @@ export default function About() {
                 </a>
               </Link>{" "}
               and create something amazing!
-            </p>
+            </code>
           </div>
         </div>
       </div>

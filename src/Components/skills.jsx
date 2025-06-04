@@ -121,7 +121,7 @@ const SkillNode = ({ label, children }) => {
             {children.map((item, idx) => (
               <li
                 key={idx}
-                className="flex items-center gap-2 hover:text-blue-300 cursor-pointer md:hover:bg-gray-700 md:bg-gray-800 rounded md:transition px-4 py-2 w-[160px] my-[2px]"
+                className="flex items-center gap-2 hover:text-blue-300 cursor-pointer md:hover:bg-white/10 md:bg-black/20 shadow-sm shadow-gray-400 rounded md:transition px-4 py-2 w-[160px] my-[10px] md:my-[2px]"
               >
                 {getSkillIcon(item)}
                 {item}
@@ -158,7 +158,7 @@ const Skills = () => {
       <div className="flex flex-col mb-10">
         <h2 className="text-3xl font-bold text-white  p-6">What I Do</h2>
         <div className="flex md:flex-row flex-col mb-2  w-full md:h-[35vh] gap-3">
-          <div className="flex flex-col items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded md:w-[33%] ">
+          <div className="flex flex-col  items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded-lg md:w-[33%] border-l-2 border-l-blue-700">
             <Globe color="purple" size={30} />
             <h1 className="text-2xl text-white font-extrabold">
               Web Development
@@ -171,7 +171,7 @@ const Skills = () => {
               are functional.
             </p>
           </div>
-          <div className="flex flex-col  items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded md:w-[33%] ">
+          <div className="flex flex-col  items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded-lg md:w-[33%] border-l-2 border-l-blue-700">
             <Pencil color="purple" size={30} />
             <h1 className="text-2xl text-white font-extrabold">
               Commissioned Art
@@ -182,7 +182,7 @@ const Skills = () => {
               commission. From realistic portraits to imaginative concepts
             </p>
           </div>
-          <div className="flex flex-col  items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded md:w-[33%] ">
+          <div className="flex flex-col  items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded-lg md:w-[33%] border-l-2 border-l-blue-700 ">
             <Brain color="purple" size={30} />
             <h1 className="text-2xl text-white font-extrabold">
               {" "}

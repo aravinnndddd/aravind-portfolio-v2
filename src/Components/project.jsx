@@ -44,7 +44,7 @@ export const Project = () => {
               key={project.id}
               className={`flex md:flex-col w-[95%]  justify-center absolute h-[60vh] md:h-[55vh] md:w-[70%]
                 shadow-md  bg-black shadow-black/100  rounded-lg
-                transition-all duration-500 ease-in-out`}
+                transition-all duration-500 ease-in-out border-l-4 border-gray-600`}
               style={{
                 transform: `translateY(${translateYValues[index] || "0vh"}) ${
                   isActive ? "scale(1)" : "scale(0.95)"
