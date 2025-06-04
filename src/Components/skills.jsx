@@ -152,10 +152,10 @@ const Skills = () => {
       className="flex flex-col md:h-[120vh]  m-5 "
     >
       <div className="flex flex-col ">
-        <h2 className="text-3xl font-bold text-white  p-6">What I Do</h2>
+        <h2 className="text-3xl font-bold text-white border-blue-500 border-b-2 w-fit m-6">What I Do</h2>
         <div className="flex md:flex-row flex-col mb-2  w-full md:h-[35vh] gap-3">
           <div className="flex flex-col  items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded-lg md:w-[33%] border-l-2 border-l-blue-700">
-            <Globe color="purple" size={30} />
+            <Globe color="blue" size={30} />
             <h1 className="text-2xl text-white font-extrabold">
               Web Development
             </h1>{" "}
@@ -168,7 +168,7 @@ const Skills = () => {
             </p>
           </div>
           <div className="flex flex-col  items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded-lg md:w-[33%] border-l-2 border-l-blue-700">
-            <Pencil color="purple" size={30} />
+            <Pencil color="blue" size={30} />
             <h1 className="text-2xl text-white font-extrabold">
               Commissioned Art
             </h1>{" "}
@@ -179,7 +179,7 @@ const Skills = () => {
             </p>
           </div>
           <div className="flex flex-col  items-center p-8 shadow-inner shadow-white/20 bg-white/10 rounded-lg md:w-[33%] border-l-2 border-l-blue-700 ">
-            <Brain color="purple" size={30} />
+            <Brain color="blue" size={30} />
             <h1 className="text-2xl text-white font-extrabold">
               {" "}
               Always Learning
@@ -195,7 +195,7 @@ const Skills = () => {
         </div>
       </div>
       <div className="flex flex-col rounded-xl shadow-xl p-6">
-        <h2 className="text-2xl font-bold text-white border-b-2 w-[220px] border-neutral-500 ">
+        <h2 className="text-2xl font-bold text-white border-b-2 w-[220px] border-blue-500 ">
           Technologies I Use
         </h2>
         {skillsData.map((group, index) => (

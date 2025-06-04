@@ -71,7 +71,7 @@ export const Contact = () => {
 
   return (
     <div id="contact" className="h-[100vh] border-b-2 border-neutral-500 mt-[10vh] flex  justify-center ">
-      <h1 className="text-center absolute font-bold text-3xl mt-3  text-white">
+      <h1 className="text-center absolute my-3 mx-auto font-bold text-4xl border-b-2 border-blue-500 w-fit px-5 text-white">
         Contact Me
       </h1>
       <div className="shadow-lg p-10 shadow-cyan-500/45 ring-2 ring-white md:h-[70vh] md:w-[90%] w-[90%] md:flex h-[90vh] rounded text-white  ">

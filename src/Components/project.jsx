@@ -27,7 +27,7 @@ export const Project = () => {
   };
   return (
     <div id="projects" className="flex flex-col  h-[100vh] m-5  border-b-2 border-neutral-500">
-      <h1 className="text-white text-center font-bold text-4xl pb-[10px] mt-[10vh]">
+      <h1 className="text-white mx-auto font-bold text-4xl border-b-2 border-blue-500 w-fit p-[10px] mt-[10vh]">
         Projects
       </h1>
 
