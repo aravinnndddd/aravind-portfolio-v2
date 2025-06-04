@@ -80,25 +80,25 @@ export const Contact = () => {
         </div>
        
     <div className="flex  flex-col md:w-[50%] gap-3  w-[100%] h-[60vh] items-center md:justify-center">
-    <a className={`${style.main}  bg-black ring-1 rounded-lg flex pl-10 items-center h-[5vh] w-[80%]`}  href="https://discord.com/users/754961569858846770" target="_blank" rel="noopener noreferrer">
+    <a className={`${style.main}  bg-black ring-1 ring-white/50 rounded-lg flex pl-10 items-center h-[5vh] w-[80%]`}  href="https://discord.com/users/754961569858846770" target="_blank" rel="noopener noreferrer">
     Sent me a Hi
           <div className={`${style.icon} absolute`}>
           <DiscordLogo/>
           </div>
         </a>
-        <a className={`${style.main}  bg-black ring-1 rounded-lg flex pl-10 items-center h-[5vh] w-[80%]`}  href="mailto:aravinnndddd73@gmail.com" target="_blank" rel="noopener noreferrer">
+        <a className={`${style.main}  bg-black ring-1 ring-white/50 rounded-lg flex pl-10 items-center h-[5vh] w-[80%]`}  href="mailto:aravinnndddd73@gmail.com" target="_blank" rel="noopener noreferrer">
         Sent me a Mail
         <div className={`${style.icon} absolute`}>
           <Mail color='white'/>
           </div>
         </a>
-        <a className={`${style.main}  bg-black ring-1 rounded-lg flex pl-10 items-center h-[5vh] w-[80%]`}  href="https://www.linkedin.com/in/aravind-p-832849331/" target="_blank" rel="noopener noreferrer">
+        <a className={`${style.main}  bg-black ring-1 ring-white/50 rounded-lg flex pl-10 items-center h-[5vh] w-[80%]`}  href="https://www.linkedin.com/in/aravind-p-832849331/" target="_blank" rel="noopener noreferrer">
         Connect with me
         <div className={`${style.icon} absolute`}>
           <LinkedinIcon color='white'/>
           </div>
         </a>
-         <a className={`${style.main}  bg-black ring-1 rounded-lg flex pl-10 items-center h-[5vh] w-[80%]`}  href="https://www.instagram.com/aravinnndddd/" target="_blank" rel="noopener noreferrer">
+         <a className={`${style.main}  bg-black ring-1 ring-white/50 rounded-lg flex pl-10 items-center h-[5vh] w-[80%]`}  href="https://www.instagram.com/aravinnndddd/" target="_blank" rel="noopener noreferrer">
         Sent me a Hi
         <div className={`${style.icon} absolute`}>
           <Instagram color='white'/>
