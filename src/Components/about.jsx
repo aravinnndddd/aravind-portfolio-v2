@@ -37,8 +37,6 @@ export default function About() {
                   1500,
                   "a Web Developer",
                   1500,
-                  "a UI Designer",
-                  1500,
                   "an Artist",
                   1500,
                   "a Tech Enthusiast",
