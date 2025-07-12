@@ -53,7 +53,7 @@ export default function About() {
             </code>
 
             <code className="leading-7 text-[1rem]">
-              I'm a passionate first-year B.Tech student with a love for coding,{" "}
+              That guy who  love for coding,{" "}
               <Link to="artworks" smooth={true} duration={500}>
                 <a href="#artworks" className="underline font-bold">
                   Drawing,
