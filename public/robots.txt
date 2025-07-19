@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aravind-p.vercel.app/sitemap.xml
